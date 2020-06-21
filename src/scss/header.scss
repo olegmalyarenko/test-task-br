@@ -1,0 +1,135 @@
+.big-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.header-text {
+  width: 7.91vw;
+  height: 47px;
+
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Museo Sans Cyrl -300";
+  color: #282828;
+  letter-spacing: 0.7px;
+}
+
+.header-map {
+  display: flex;
+}
+.header-map__item {
+  margin-left: 1.26vw;
+  h3 {
+    /* Style for "Мы находим" */
+    width: 207px;
+    height: 36px;
+
+    font-weight: 400;
+    font-weight: bold;
+    font-size: 16px;
+
+/* Text style for "Мы находим" */
+    font-family: "Museo Sans Cyrl -700";
+    color: #282828;
+    letter-spacing: 0.8px;
+  }
+  p {
+    margin-top: -30px;
+    margin-bottom: 8px;
+
+/* Text style for "г. Брест," */
+
+    font-family: "Museo Sans Cyrl 300";
+    letter-spacing: 0.8px;
+  }
+  a {
+    width: 7.8vw;
+    height: 9px;
+    margin-top: 15px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.01px;
+    font-family: "Museo Sans Cyrl -500";
+    color: #ff6078;
+    text-transform: uppercase;
+
+/* Text style for "Смотреть н" */
+    letter-spacing: 1.2px;
+
+    border-bottom: 1px solid #ff6078;
+  }
+}
+
+.header-contacts__item {
+  display: flex;
+}
+
+phone p {
+  width: 10.82vw;
+  height: 11px;
+
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Museo Sans Cyrl -500";
+  color: #282828;
+
+/* Text style for "Звоните, м" */
+  letter-spacing: 0.96px;
+}
+.phone__item {
+  width: 11.65vw;
+  height: 17px;
+  margin-left: 0.5vw;
+
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Museo Sans Cyrl -500";
+  color: #282828;
+
+/* Text style for "+375 33 38" */
+  letter-spacing: 0.6px;
+}
+
+
+.time {
+  margin-top: -20px;
+  p {
+    /* Style for "Пн-Вс 9:00" */
+    width: 144px;
+    height: 12px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: "Museo Sans Cyrl -700";
+
+/* Text style for "Пн-Вс" */
+    font-family: "Museo Sans Cyrl -300";
+    color: #282828;
+    letter-spacing: 0.8px;
+  }
+  span {
+    font-weight: bold;
+
+/* Text style for "9:00-21:00" */
+    font-family: "Museo Sans Cyrl 700";
+    letter-spacing: 0.8px;
+  }
+}
+.header-button {
+  width: 12.58vw;
+  height: 62px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Museo Sans Cyrl -500";
+  color: #1f1d1d;
+  letter-spacing: 0.75px;
+
+  background-color: #fefcfb;
+  border-radius: 30px;
+}
