@@ -1,5 +1,6 @@
 @import "./normalize.scss";
 @import "./header.scss";
+@import "./menu.scss";
 body {
   width: 100%;
 
@@ -11,4 +12,11 @@ body {
   margin-left: 7vw;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
 
