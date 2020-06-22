@@ -4,6 +4,8 @@
 @import "./menu.scss";
 @import "./intro.scss";
 body {
+  z-index: 0;
+
   width: 100%;
   height: 1200px;
 
