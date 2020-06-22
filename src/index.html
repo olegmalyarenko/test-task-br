@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type="text/css" href='dist/main.css'>
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
     <title>Document</title>
 </head>
 <body>
@@ -39,7 +40,7 @@
                 </div>
             </div>
             
-            <button class="header-button"><img src="assets/images/календарь.svg" alt="calendar"> Записаться онлайн</button> 
+            <button class="header-button js-open-modal"><img src="assets/images/календарь.svg" alt="calendar"> Записаться онлайн</button> 
          </div>
      </header>
      <section class="menu">
@@ -93,7 +94,7 @@
                     <li> результат уже после первой процедуры;</li>
                  </ul>
 
-                  <button class="intro-submit"><a class="submit-text" href="#">Получите карту <br/> клиента бесплатно</a><span class="submit-img"><img src="./assets/images/Branch.png" alt="submit-img"></span></button>
+                  <button class="intro-submit js-open-modal"><a class="submit-text" href="#">Получите карту <br/> клиента бесплатно</a><span class="submit-img"><img src="./assets/images/Branch.png" alt="submit-img"></span></button>
                 </div>
                 
                 <div class="img-side">
@@ -115,6 +116,39 @@
             
         </div>
      </section>
+     <div class="modal" data-modal="1">
+        <!--   Svg иконка для закрытия окна  -->
+        <svg class="modal__cross js-modal-close" id="js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+     
+        
+        <h2 class="modal-title"><span>Получите</span> программу обучения</h2>
+        <p class="modal-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+        <div class="form_wrp rf">
+            <form id="callback_form" name="callback_form">
+                <div class="field"></div>
+                <select class="modal-select">
+                    <option>Не открывается</option>
+                    <option selected><a href="#" class="selected-option">Повышение квалификации</a></option>
+                    <option>Не открывается</option>
+                    <option>Не открывается</option>
+                </select>
+                </div>
+                <div class="field">
+                    <input type="text" name="callback_name" class="required good modal-input" placeholder="Ваше имя">
+                </div>
+                <div class="field">
+                    <input type="text" name="callback_phone" class="required good modal-input" placeholder="Ваш номер телефона">
+                </div>
+                <div class="submit">
+                    <button class="modal-submit"><a href="#" class="button-link">Получить программу</a><span class="modal-img"><img src="./assets/images/Plant.png" alt="modal-img"></span></button>
+                </div>
+            </form>
+            <div class="modal-bkg-img"><img src="./assets/images/overlay_копия_3.png" alt="img"></div>
+        </div> <!-- /.form_wrp -->
+     </div>
+     
+     <!-- Подложка под модальным окном -->
+     <div class="overlay" id="overlay-modal"></div>
      <script src="index.js"></script>
 </body>
 </html>
