@@ -12,7 +12,7 @@
 .header-text {
   width: 7.91vw;
   height: 47px;
-  margin: 1%;
+  margin: 3%;
 
   font-weight: 400;
   font-size: 14px;
@@ -153,6 +153,8 @@
 
 @media (min-width: 1100px) and (max-width: 1249px) {
   .header-text {
+    width: 9vw;
+
     font-size: 12px;
   }
   .phone__item {
@@ -165,7 +167,225 @@
     font-size: 12px;
   }
   .header-logo img {
-    width: 200px;
+    width: 10.42vw;
     height: 80px;
+  }
+  .header-map__item h3 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1099px) {
+  .header-text {
+    width: 9vw;
+
+    font-size: 11px;
+  }
+  .phone__item {
+    font-size: 15px;
+  }
+  .time {
+    margin-top: 5px;
+  }
+  .header-button {
+    font-size: 11px;
+  }
+  .header-logo img {
+    width: 10vw;
+    height: 90px;
+  }
+  .header-map__item h3 {
+    font-size: 11px;
+  }
+  .header-map img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+@media (min-width: 800px) and (max-width: 899px) {
+  .header-text {
+    width: 11vw;
+
+    font-size: 11px;
+  }
+  .phone__item {
+    font-size: 13px;
+  }
+  .time {
+    margin-top: 5px;
+  }
+  .header-button {
+    width: 150px;
+
+    font-size: 11px;
+  }
+  .header-logo img {
+    width: 10vw;
+    height: 90px;
+  }
+  .header-map__item h3 {
+    font-size: 11px;
+  }
+  .header-map img {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+  }
+  .header-map__item p {
+    margin-top: -20px;
+
+    font-size: 11px;
+  }
+  .header-map__item a {
+    margin-top: -15px;
+
+    font-size: 10px;
+  }
+  .time span,
+  .time p {
+    font-size: 12px;
+  }
+  .time img,
+  .phone img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+  .header-text {
+    width: 14vw;
+
+    font-size: 11px;
+  }
+  .phone__item {
+    font-size: 13px;
+  }
+  .time {
+    margin-top: 5px;
+  }
+  .header-button {
+    width: 150px;
+
+    font-size: 11px;
+  }
+  .header-logo img {
+    width: 100px;
+    height: 90px;
+  }
+  .time span,
+  .time p {
+    font-size: 12px;
+  }
+  .time img,
+  .phone img {
+    width: 45px;
+    height: 45px;
+  }
+  .header-map {
+    display: none;
+  }
+  .phone p {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 599px) {
+  .header-text {
+    width: 14vw;
+
+    font-size: 11px;
+  }
+  .phone__item {
+    font-size: 13px;
+  }
+  .time {
+    margin-top: 15px;
+  }
+  .header-button {
+    display: none;
+  }
+  .header-logo img {
+    width: 100px;
+    height: 90px;
+  }
+  .time span,
+  .time p {
+    font-size: 12px;
+  }
+  .time img,
+  .phone img {
+    width: 45px;
+    height: 45px;
+  }
+  .header-map {
+    display: none;
+  }
+  .phone p {
+    max-width: 160px;
+    padding-left: 10px;
+  }
+  .phone p::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -5px;
+  }
+}
+
+
+@media (min-width: 350px) and (max-width: 449px) {
+  .big-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-text {
+    width: 100%;
+
+    font-size: 14px;
+    text-align: center;
+  }
+  .header-contacts {
+    margin-top: -40px;
+  }
+  .phone__item {
+    font-size: 13px;
+  }
+  .time {
+    margin-top: 15px;
+  }
+  .header-button {
+    display: none;
+  }
+  .header-logo img {
+    width: 120px;
+    height: 100px;
+  }
+  .time span,
+  .time p {
+    font-size: 12px;
+  }
+  .time img,
+  .phone img {
+    width: 45px;
+    height: 45px;
+  }
+  .header-map {
+    display: none;
+  }
+  .phone p {
+    max-width: 160px;
+    padding-left: 10px;
+  }
+  .phone p::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -5px;
   }
 }
