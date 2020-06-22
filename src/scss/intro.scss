@@ -2,6 +2,8 @@
   width: 35.63vw;
   height: 206px;
   margin-top: 110px;
+  margin-bottom: 100px;
+  margin-left: 5.99vw;
 
   font-weight: 400;
   font-size: 48px;
@@ -12,3 +14,27 @@
   font-weight: bold;
   font-family: "Museo Sans Cyrl 700";
 }
+
+.intro-list {
+  width: 23.23vw;
+  height: 125px;
+  margin-top: 60px;
+  margin-left: 4.99vw;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  font-family: "Museo Sans Cyrl -300";
+  color: #282828;
+  letter-spacing: 0.45px;
+  li {
+    position: relative;
+  }
+  li::before {
+    content: url("../assets/images/иконка-списка.svg");
+    position: absolute;
+    top: 0;
+    left: -2.5vw;
+  }
+}
+
