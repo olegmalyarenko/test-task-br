@@ -38,6 +38,12 @@
   left: 92.34vw;
 }
 
+@media all and (max-width:950) {
+  .vector-image {
+    display: none;
+  }
+}
+
 /////
 .navBurger {
   box-sizing: border-box;
