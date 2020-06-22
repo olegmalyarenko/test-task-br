@@ -4,10 +4,15 @@
   align-items: center;
   margin-top: 32px;
 }
+.header-logo img {
+  width: 14.58vw;
+  height: 126px;
+}
 
 .header-text {
   width: 7.91vw;
   height: 47px;
+  margin: 1%;
 
   font-weight: 400;
   font-size: 14px;
@@ -22,15 +27,11 @@
 .header-map__item {
   margin-left: 1.26vw;
   h3 {
-    /* Style for "Мы находим" */
-    width: 207px;
     height: 36px;
 
     font-weight: 400;
     font-weight: bold;
     font-size: 16px;
-
-/* Text style for "Мы находим" */
     font-family: "Museo Sans Cyrl -700";
     color: #282828;
     letter-spacing: 0.8px;
@@ -38,8 +39,6 @@
   p {
     margin-top: -30px;
     margin-bottom: 8px;
-
-/* Text style for "г. Брест," */
 
     font-family: "Museo Sans Cyrl 300";
     letter-spacing: 0.8px;
@@ -55,8 +54,6 @@
     font-family: "Museo Sans Cyrl -500";
     color: #ff6078;
     text-transform: uppercase;
-
-/* Text style for "Смотреть н" */
     letter-spacing: 1.2px;
 
     border-bottom: 1px solid #ff6078;
@@ -67,37 +64,49 @@
   display: flex;
 }
 
-phone p {
-  width: 10.82vw;
+.phone p {
+  position: relative;
+
   height: 11px;
+  margin-bottom: -30px;
+  padding-left: 0.8vw;
 
   font-weight: 400;
   font-size: 12px;
   font-family: "Museo Sans Cyrl -500";
   color: #282828;
-
-/* Text style for "Звоните, м" */
   letter-spacing: 0.96px;
+}
+.phone p::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -0.3vw;
+
+  width: 6px;
+  height: 6px;
+  margin: 5px auto;
+
+  background: #27b24b;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 7px rgba(79, 160, 55, 0.61);
 }
 .phone__item {
   width: 11.65vw;
   height: 17px;
-  margin-left: 0.5vw;
+  margin-left: -0.5vw;
 
   font-weight: 400;
   font-size: 24px;
   font-family: "Museo Sans Cyrl -500";
   color: #282828;
-
-/* Text style for "+375 33 38" */
   letter-spacing: 0.6px;
 }
 
 
 .time {
-  margin-top: -20px;
   p {
-    /* Style for "Пн-Вс 9:00" */
     width: 144px;
     height: 12px;
 
@@ -105,16 +114,12 @@ phone p {
     font-size: 16px;
     line-height: 21px;
     font-family: "Museo Sans Cyrl -700";
-
-/* Text style for "Пн-Вс" */
     font-family: "Museo Sans Cyrl -300";
     color: #282828;
     letter-spacing: 0.8px;
   }
   span {
     font-weight: bold;
-
-/* Text style for "9:00-21:00" */
     font-family: "Museo Sans Cyrl 700";
     letter-spacing: 0.8px;
   }
@@ -132,4 +137,35 @@ phone p {
 
   background-color: #fefcfb;
   border-radius: 30px;
+}
+
+@media (min-width: 1250px) and (max-width: 1400px) {
+  .header-text {
+    font-size: 12px;
+  }
+  .phone__item {
+    font-size: 18px;
+  }
+  .time {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1249px) {
+  .header-text {
+    font-size: 12px;
+  }
+  .phone__item {
+    font-size: 18px;
+  }
+  .time {
+    margin-top: 5px;
+  }
+  .header-button {
+    font-size: 12px;
+  }
+  .header-logo img {
+    width: 200px;
+    height: 80px;
+  }
 }
